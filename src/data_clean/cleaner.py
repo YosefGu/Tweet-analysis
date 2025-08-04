@@ -11,6 +11,9 @@ class Cleaner():
         self.remove_semicolumn()
         return
 
+    def get_df(self):
+        return self.df
+    
     def remove_unclassfied_rows(self):
         self.df = self.df[self.df['Biased'].notna()].copy()
         return
