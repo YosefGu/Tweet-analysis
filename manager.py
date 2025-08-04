@@ -9,9 +9,11 @@ class Manager():
         df = File_Handling.read_csv_to_df("data/tweets_dataset.csv")
         claener = Cleaner(df)
         claener.run()
-        File_Handling.create_csv_from_df(claener.df)
+        cleaned_df = claener.get_df()
 
-        analyst = Analyst(claener.df)
+        File_Handling.create_csv_from_df(cleaned_df)
+
+        analyst = Analyst(cleaned_df)
         analyst.run()
 
         dict_to_save = {
