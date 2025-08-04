@@ -1,26 +1,19 @@
 Tweets analysis project
 
-the main gol is:
+The main goal is:
 
-1) מעבר על קובץ csv ניוקי כפי ההנחיות שניתנו ושמירה בקובץ חדש
-2) חקירת הדאטה ע"פ ההנחיות שניתנו ושמירת התוצאות בקובץ json
+1) Reading CSV data file, cleaning it up and saveing it in a new CSV file.
 
-מבנה קבצים
-1) קובץ ניהול - מריץ את כל הפונקציות לפי הסדר עד לקבלת מוצר מוגמר.
+2) Analys the data using specific functions and svae the results as JSON file
 
-2) file handling - מחלקה לניהול קבצים הכוללת פונקציה לקריאת קובץ csv. 
-שמירת נתונים כקובץ csv.
-שמירת נתונים כקובץ json
+Files stracture
 
-3) dada clean -  מחלקה הכוללת פונקציות ניקוי כגון - בחירת עמודות נבחרות,
-הסרת שורות עם ערך חסר
-הסרת סימני פיסוק
+1) Management file - run all functions like - read, clean and save
 
-4) analyst - מחלקה להוצאת נתונים מבוקשים כגון -
-אורך ממוצע של מילים בכל ציוץ
-10 מילים נפוצות
-3 הציוצים הארוכים
-מילים שנכתבו באותיות גדולות 
-וכו
+2) File handling - class includes function for handling severl files types.
+
+3) dada clean -  class includs functions for cleaning data.
+
+4) analyst - class for analyst functions by given instractions.
 
 
